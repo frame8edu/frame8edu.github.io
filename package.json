@@ -1,0 +1,8 @@
+{
+  "name": "frame8edu-static-preview",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node -e \"console.log('Static HTML ready')\""
+  }
+}

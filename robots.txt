@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://frame8edu.com/sitemap.xml
