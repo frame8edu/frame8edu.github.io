@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="프레임과 새싹을 형상화한 프레임8교육연구소 심벌">
+  <g fill="#0e1b33">
+    <path d="M6 7l24 7v10l-14-4v32l14-5v10L6 64V7z"/>
+    <path d="M66 7l-24 7v10l14-4v32l-14-5v10l24 7V7z"/>
+    <path d="M36 39C25 40 17 34 17 23c10-1 18 5 19 16z"/>
+    <path d="M36 32c1-11 9-18 20-17-1 11-8 18-20 17z"/>
+  </g>
+  <path d="M36 55V34" fill="none" stroke="#0e1b33" stroke-width="4.5" stroke-linecap="round"/>
+</svg>

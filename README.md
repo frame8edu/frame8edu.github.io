@@ -1,32 +1,42 @@
 # 프레임8교육연구소 홈페이지
 
-`frame8edu.com`용 정적 HTML 홈페이지입니다. 별도의 빌드 과정 없이 GitHub Pages에서 배포할 수 있습니다.
+사용자가 제공한 기존 다중 페이지 홈페이지 구성을 유지하면서, 프레임8교육연구소의 현재 방향인 **READ 진로문해력**을 중심으로 다시 구성한 정적 홈페이지입니다.
 
-## GitHub Pages 연결
+## 브랜드 색상
 
-1. GitHub에서 새 저장소를 만듭니다.
-2. 이 폴더 안의 파일과 폴더를 저장소 최상위에 업로드합니다.
-3. 저장소의 **Settings → Pages**로 이동합니다.
-4. **Source**에서 **GitHub Actions**를 선택합니다.
-5. `main` 브랜치에 업로드하면 자동 배포됩니다.
+- 잉크 인디고: `#24385F`
+- 저채도 블루: `#607CA5`
+- 웜 화이트(페이지 배경): `#FAF9F6`
+- 화이트: `#FFFFFF`
 
-## frame8edu.com 도메인 연결
+밝고 채도가 높은 블루는 사용하지 않습니다. 전체 바탕에는 크림 한 방울을 더한 웜 화이트를 사용하고, 메뉴·카드·버튼은 순백색으로 유지해 따뜻함과 선명한 정보 구조가 함께 보이도록 했습니다. 로고, 제목, 버튼, 파비콘은 잉크 네이비·저채도 블루를 중심으로 통일했습니다.
 
-저장소에는 `CNAME` 파일이 포함되어 있습니다. 도메인 관리업체의 DNS에서 다음을 설정합니다.
+`img/frame8-mark.png`는 브라우저 아이콘용 심벌로 사용합니다.
 
-- `www`: CNAME → `<GitHub아이디>.github.io`
-- 루트 도메인(`@`): GitHub Pages 안내에 표시되는 A 레코드 4개
+기관명은 화면에서 **프레임8교육연구소** 한글 표기로 통일합니다. READ와 AI처럼 프로그램 이해에 필요한 고유명·용어를 제외한 장식용 영문 표기는 사용하지 않습니다.
 
-DNS 반영 후 GitHub의 **Settings → Pages → Custom domain**에 `frame8edu.com`을 입력하고 **Enforce HTTPS**를 켭니다.
+## 페이지 구성
 
-## 수정 위치
+- `index.html`: 홈
+- `about.html`: 연구소 소개
+- `research.html`: 연구영역
+- `programs.html`: 프로그램
+- `courses.html`: 학교급별 적용
+- `process.html`: 개발과정
+- `faculty.html`: 조직과 협력
+- `contact.html`: 문의
 
-- 메인: `index.html`
-- 프로그램: `program.html`
-- AI 활용·윤리: `ai-ethics.html`
-- 대표자: `director.html`
-- 문의: `inquiry.html`
-- 공통 디자인: `assets/style.css`
-- 메뉴·폼 동작: `assets/app.js`
+## READ 진로문해력
 
-문의 폼은 개인정보를 저장하거나 전송하지 않는 안내용 상태입니다. 실제 접수 기능을 연결하기 전에는 현재 상태를 유지하세요.
+- **R — Read**: 이야기·사례·진로 정보에서 인물, 상황, 문제의 맥락을 읽습니다.
+- **E — Explore**: 문제와 연결된 직업, 산업, 역할, 사회 변화를 탐구합니다.
+- **A — Act**: 직업인의 관점으로 질문하고 판단하며 협업하고 결과물을 만듭니다.
+- **D — Discover**: 활동을 돌아보며 자신의 흥미, 강점, 가치와 가능성을 발견합니다.
+
+문의 전화는 `050-0700-8500`, 이메일은 `frame8edu@gmail.com`입니다.
+
+## GitHub Pages 게시
+
+저장소의 `main` 브랜치에 이 폴더의 파일을 올리고 GitHub의 **Settings → Pages → Source**에서 **GitHub Actions**를 선택하면, `.github/workflows/pages.yml`을 통해 변경 사항을 자동 게시할 수 있습니다.
+
+사용자 도메인은 `CNAME`의 `frame8edu.com`, GitHub Pages 설정, 도메인 DNS를 함께 확인해야 합니다.
