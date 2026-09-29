@@ -112,6 +112,7 @@ p, li { text-wrap: pretty; }
 .read-letter { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 32px; border-radius: 17px; background: var(--blue); color: white; font-size: 1.55rem; font-weight: 900; }
 .read-card:nth-child(even) .read-letter { background: var(--navy); }
 .read-card h3 { margin-bottom: 10px; font-size: 1.35rem; }
+.read-card h3 small { display: block; margin-bottom: 5px; color: var(--blue); font-size: .72rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .read-card p { margin-bottom: 0; color: var(--muted); }
 .read-card::after { content: attr(data-letter); position: absolute; right: -10px; bottom: -43px; color: rgba(var(--blue-rgb),.06); font-size: 11rem; font-weight: 950; line-height: 1; }
 .ai-note { display: grid; grid-template-columns: 150px 1fr; gap: 28px; align-items: center; margin-top: 28px; padding: 22px 26px; border: 1px solid var(--pale-line); border-radius: 10px; background: var(--white); box-shadow: none; }
@@ -124,6 +125,8 @@ p, li { text-wrap: pretty; }
 .plain-list li { display: grid; grid-template-columns: 40px 1fr; gap: 15px; padding: 17px 0; border-top: 1px solid var(--line); }
 .plain-list b { color: var(--navy); }
 .plain-list span { color: var(--muted); }
+.read-summary { margin-top: 0; }
+.read-summary strong { color: var(--navy); }
 
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
